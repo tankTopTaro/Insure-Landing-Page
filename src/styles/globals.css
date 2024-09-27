@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-dark-violet: hsl(256, 26%, 20%);
+    --primary-grayish-blue: hsl(216, 30%, 68%);
+    --neutral-dark-violet: hsl(270, 9%, 17%);
+    --neutral-grayish-violet: hsl(273, 4%, 51%);
+    --neutral-very-light-gray: hsl(0, 0%, 98%);
+    --background-white: hsl(255, 0%, 100%);
+}
+
+.nav-item {
+    font-weight: 600;
+    color: var(--neutral-grayish-violet);
+    padding: .5rem 1rem;
+}
+
+.nav-item .nav-link:hover {
+    color: var(--primary-dark-violet);
+}
+
+.nav-item:last-child {
+    border: 2px solid var(--primary-dark-violet);
+    color: var(--primary-dark-violet);
+    padding: .5rem 2rem;
+}
+
+.nav-item:last-child .nav-link:hover {
+    color: var(--background-white);
+    background-color: var(--primary-dark-violet);
+}
